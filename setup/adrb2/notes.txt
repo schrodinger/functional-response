@@ -1,0 +1,5 @@
+The poses in the files adrb2-cluster*.mae were used for the restrained simulations.
+The cms files in the folder 'rmsf-for-restraints' contain the unscaled RMSF for each cluster. Restraints used a scaling factor of 0.6.
+
+The poses in the files with PDB IDs were used for the unrestrained simulations.
+
