@@ -1,0 +1,1 @@
+Restraints on the receptor were applied with respect to the ABFEP starting structure. 
