@@ -1,3 +1,8 @@
+# Schrodinger Suite files
+*.maegz
+*.fmp
+*.prj
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
