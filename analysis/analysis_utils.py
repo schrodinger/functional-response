@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -248,3 +249,19 @@ def calculate_ddg(input_data):
     return(data)
 
 
+def analyze_study(protein, keep_gscores=False, limits=[-27.5,2.5], 
+                  merge_by_name=False, combination='min'):
+    """
+    Runs a predetermined analysis workflow on a dataset.
+    """
+    data = pd.read_csv('../results/'+protein+'.csv')
+    if merge_by_name:
+        data = reorder_by_name(
+            data, combination=combination
+        )
+    data = calculate_ddg(data)
+    os.makedirs('plots', exist_ok=True)
+    perfo = performance(data, filename='plots/'+protein) 
+    table = barplot(data, use_index='sorted', filename='plots/'+protein)
+    scatterplot(data, limits=limits, filename='plots/'+protein)
+    return table, perfo
