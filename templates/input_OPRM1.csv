@@ -1,0 +1,12 @@
+System_Name,Topology,Trajectory,Start_Label
+OPRM1-I,../MDSim/v3/trajectories/OPRM1-I_MDSim_01-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-I_MDSim_01_trj,inactive
+OPRM1-I,../MDSim/v3/trajectories/OPRM1-I_MDSim_02-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-I_MDSim_02_trj,inactive
+OPRM1-I,../MDSim/v3/trajectories/OPRM1-I_MDSim_03-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-I_MDSim_03_trj,inactive
+OPRM1-I,../MDSim/v3/trajectories/OPRM1-I_MDSim_04-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-I_MDSim_04_trj,inactive
+OPRM1-I,../MDSim/v3/trajectories/OPRM1-I_MDSim_05-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-I_MDSim_05_trj,inactive
+OPRM1-A,../MDSim/v3/trajectories/OPRM1-A_MDSim_01-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-A_MDSim_01_trj,active
+OPRM1-A,../MDSim/v3/trajectories/OPRM1-A_MDSim_02-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-A_MDSim_02_trj,active
+OPRM1-A,../MDSim/v3/trajectories/OPRM1-A_MDSim_03-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-A_MDSim_03_trj,active
+OPRM1-A,../MDSim/v3/trajectories/OPRM1-A_MDSim_04-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-A_MDSim_04_trj,active
+OPRM1-A,../MDSim/v3/trajectories/OPRM1-A_MDSim_05-e_step100-out.cms,../MDSim/v3/trajectories/OPRM1-A_MDSim_05_trj,active
+

@@ -1,0 +1,7 @@
+Restraint definitions:
+- ADRB1 simulations were restrained with a harmonic potential to the respective starting frame.
+- ADRB2 restraints were determined by running the protocol manually, using input and selections in input_ADRB2.csv and selections.csv.
+- Restraints for all other receptors were determined using the command in the corresponding bash file.
+
+We used version 1.0.0 of the FEP Restraints workflow, maintained at https://github.com/schrodinger/fep-restraints.
+

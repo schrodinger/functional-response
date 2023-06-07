@@ -1,0 +1,12 @@
+System_Name,Topology,Trajectory,Start_Label
+OPRD1-I,../MDSim/v2/trajectories/OPRD1-I_MDSim_01-out.cms,../MDSim/v2/trajectories/OPRD1-I_MDSim_01_trj,inactive
+OPRD1-I,../MDSim/v2/trajectories/OPRD1-I_MDSim_02-out.cms,../MDSim/v2/trajectories/OPRD1-I_MDSim_02_trj,inactive
+OPRD1-I,../MDSim/v2/trajectories/OPRD1-I_MDSim_03-out.cms,../MDSim/v2/trajectories/OPRD1-I_MDSim_03_trj,inactive
+OPRD1-I,../MDSim/v2/trajectories/OPRD1-I_MDSim_04-out.cms,../MDSim/v2/trajectories/OPRD1-I_MDSim_04_trj,inactive
+OPRD1-I,../MDSim/v2/trajectories/OPRD1-I_MDSim_05-out.cms,../MDSim/v2/trajectories/OPRD1-I_MDSim_05_trj,inactive
+OPRD1-A,../MDSim/v2/trajectories/OPRD1-A_MDSim_01-out.cms,../MDSim/v2/trajectories/OPRD1-A_MDSim_01_trj,active
+OPRD1-A,../MDSim/v2/trajectories/OPRD1-A_MDSim_02-out.cms,../MDSim/v2/trajectories/OPRD1-A_MDSim_02_trj,active
+OPRD1-A,../MDSim/v2/trajectories/OPRD1-A_MDSim_03-out.cms,../MDSim/v2/trajectories/OPRD1-A_MDSim_03_trj,active
+OPRD1-A,../MDSim/v2/trajectories/OPRD1-A_MDSim_04-out.cms,../MDSim/v2/trajectories/OPRD1-A_MDSim_04_trj,active
+OPRD1-A,../MDSim/v2/trajectories/OPRD1-A_MDSim_05-out.cms,../MDSim/v2/trajectories/OPRD1-A_MDSim_05_trj,active
+

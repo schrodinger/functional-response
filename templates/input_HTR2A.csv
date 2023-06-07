@@ -1,0 +1,12 @@
+System_Name,Topology,Trajectory,Start_Label
+HTR2A-I,../MDSim/v3/trajectories/HTR2A-I_MDSim_01-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-I_MDSim_01_trj,inactive
+HTR2A-I,../MDSim/v3/trajectories/HTR2A-I_MDSim_02-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-I_MDSim_02_trj,inactive
+HTR2A-I,../MDSim/v3/trajectories/HTR2A-I_MDSim_03-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-I_MDSim_03_trj,inactive
+HTR2A-I,../MDSim/v3/trajectories/HTR2A-I_MDSim_04-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-I_MDSim_04_trj,inactive
+HTR2A-I,../MDSim/v3/trajectories/HTR2A-I_MDSim_05-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-I_MDSim_05_trj,inactive
+HTR2A-A,../MDSim/v3/trajectories/HTR2A-A_MDSim_01-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-A_MDSim_01_trj,active
+HTR2A-A,../MDSim/v3/trajectories/HTR2A-A_MDSim_02-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-A_MDSim_02_trj,active
+HTR2A-A,../MDSim/v3/trajectories/HTR2A-A_MDSim_03-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-A_MDSim_03_trj,active
+HTR2A-A,../MDSim/v3/trajectories/HTR2A-A_MDSim_04-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-A_MDSim_04_trj,active
+HTR2A-A,../MDSim/v3/trajectories/HTR2A-A_MDSim_05-e_step100-out.cms,../MDSim/v3/trajectories/HTR2A-A_MDSim_05_trj,active
+
