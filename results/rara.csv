@@ -1,4 +1,4 @@
-ligand,ligand_name,label,gscoreA,gscoreI,DG(A),$\sigma$(A),DG(I),$\sigma$(I)
+ligand_number,ligand,label,gscoreA,gscoreI,DG(A),$\sigma$(A),DG(I),$\sigma$(I)
 Lig2644,tretinoin,A,-11.49000,-9.80000,-26.41380,0.10696,-20.52960,0.12359
 Lig2647,Ro 40-6055,A,-13.36000,-11.95000,-26.77960,0.10907,-19.47710,0.12810
 Lig2645,alitretinoin,A,-10.57000,-10.08000,-27.87790,0.12016,-20.90320,0.11645
