@@ -28,11 +28,8 @@ def accuracy(targets, predictions):
 def performance(data, filename=None):
     
     data = data[data['label']!='-'][data['label']!='M']
-
-    keys_i = [k for k in data.keys() if k[:2] == 'DG' and k[-2:] == ' I']
-    keys_a = [k for k in data.keys() if k[:2] == 'DG' and k[-2:] == ' A']
-    data_i = np.min( data[keys_i], axis=1 )
-    data_a = np.min( data[keys_a], axis=1 )
+    data_i = data['DG(I)']
+    data_a = data['DG(A)']
     
     label = np.array( data['label'] == 'A', dtype=int )
     score = np.array( data_a - data_i, dtype=float )
@@ -117,17 +114,17 @@ def scatterplot(data, title=None, filename=None, limits=[-27.5,7.5]):
     colormap = {'A':'C1', 'I':'C0'}
     markermap = {'A':'s', 'I':'o'}
     labelmap = {'A':'agon.', 'I':'antag.'}
+
+    print(data)
     
     fig, ax = plt.subplots(1,1, figsize=[3,3], dpi=300)
     labels_in_set = set(data[data['label']!='-']['label'])
     for act_label in labels_in_set:
-        keys_i = [k for k in data.keys() if k[:2] == 'DG' and k[-2:] == ' I']
-        keys_a = [k for k in data.keys() if k[:2] == 'DG' and k[-2:] == ' A']
-        data_i = data[data['label']==act_label][keys_i]
-        data_a = data[data['label']==act_label][keys_a]
+        data_i = data[data['label']==act_label]['DG(I)']
+        data_a = data[data['label']==act_label]['DG(A)']
         ax.plot(
-            np.min(data_i, axis=1), 
-            np.min(data_a, axis=1), 
+            data_i, 
+            data_a, 
             markermap[act_label], 
             color=colormap[act_label], 
             label=labelmap[act_label], 
@@ -241,10 +238,12 @@ def write_to_xlsx(data, name):
 def calculate_ddg(input_data):
     data = input_data.copy()
     col = data.columns
-    col_a = col[[c[:2]=="DG" and c[-1]=='A' for c in col]]
-    col_i = col[[c[:2]=="DG" and c[-1]=='I' for c in col]]
-    data['DG(A)'] = data[col_a].min(axis=1)
-    data['DG(I)'] = data[col_i].min(axis=1)
+    if not 'DG(A)' in data.keys():
+        col_a = col[[c[:2]=="DG" and c[-1]=='A' for c in col]]
+        data['DG(A)'] = data[col_a].min(axis=1)
+    if not 'DG(I)' in data.keys():
+        col_i = col[[c[:2]=="DG" and c[-1]=='I' for c in col]]
+        data['DG(I)'] = data[col_i].min(axis=1)
     data['DDG'] = data['DG(A)'] - data['DG(I)']
     return(data)
 
