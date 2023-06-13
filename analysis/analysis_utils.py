@@ -115,8 +115,6 @@ def scatterplot(data, title=None, filename=None, limits=[-27.5,7.5]):
     markermap = {'A':'s', 'I':'o'}
     labelmap = {'A':'agon.', 'I':'antag.'}
 
-    print(data)
-    
     fig, ax = plt.subplots(1,1, figsize=[3,3], dpi=300)
     labels_in_set = set(data[data['label']!='-']['label'])
     for act_label in labels_in_set:
