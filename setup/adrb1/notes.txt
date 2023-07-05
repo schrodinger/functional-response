@@ -1,1 +1,2 @@
-Restraints on the receptor were applied with respect to the ABFEP starting structure. 
+I: 5A8E
+A: 7JJO
