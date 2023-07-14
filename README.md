@@ -14,3 +14,4 @@ We have investigated the following receptors:
 - OPRM1 - mu-opioid receptor
 - HTR1B - serotonin receptor 1B
 - HTR2A - serotonin receptor 2A
+- RARA - retinoic acid receptor alpha
