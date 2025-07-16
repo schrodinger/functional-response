@@ -17,7 +17,7 @@ $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/adora1-a_poses.mae \
 	-r restraints/pca-kmeans_n04_s42_k04_cluster00_rmsf_avg.cms \
 	-j adora1_n04_s42_k04_cluster00-a \
 	--scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-	--align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+	--align-sel "protein and chain R and at.ptype CA and ${RESRANGE}" \
 	--md-sim-time 2000 --fep-sim-time 10000 \
 	--host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
 	--ffbuilder --ffhost bolt_cpu
