@@ -4,8 +4,8 @@
 #
 # To submit a job after running this script, cd into the directory and run the bash file there.
 #
-# This script assumes use of the Bolt cluster by a dev team member.
-# If you use it somewhere else, adapt the options: host, subhost, ffhost, project
+# This script assumes use of the Ada cluster by a dev team member.
+# If you use it somewhere else, adapt the options: host, subhost, ffhost, account
 #
 
 REPO="/home/voegele/dev/fep-restraints"
@@ -18,49 +18,49 @@ $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/oprd1-a_poses.mae \
 	-r restraints/pca-kmeans_n04_s42_k05_cluster00_rmsf_avg.cms \
 	-j oprd1_n04_s42_k05_cluster00-a \
 	--scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-	--align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+	--asl "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
 	--md-sim-time 2000 --fep-sim-time 10000 \
-	--host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
-	--ffbuilder --ffhost bolt_cpu 
+	--host driver --subhost gpu --account dev --maxjob 0 --retries 5 \
+	--ffbuilder --ffhost cpu 
 
 # Cluster 1, active
 $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/oprd1-i_poses.mae \
         -r restraints/pca-kmeans_n04_s42_k05_cluster01_rmsf_avg.cms \
         -j oprd1_n04_s42_k05_cluster01-i \
         --scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-        --align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+        --asl "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
         --md-sim-time 2000 --fep-sim-time 10000 \
-        --host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
-        --ffbuilder --ffhost bolt_cpu
+        --host driver --subhost gpu --account dev --maxjob 0 --retries 5 \
+        --ffbuilder --ffhost cpu
 
 # Cluster 2, active
 $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/oprd1-a_poses.mae \
         -r restraints/pca-kmeans_n04_s42_k05_cluster02_rmsf_avg.cms \
         -j oprd1_n04_s42_k05_cluster02-a \
         --scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-        --align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+        --asl "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
         --md-sim-time 2000 --fep-sim-time 10000 \
-        --host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
-        --ffbuilder --ffhost bolt_cpu
+        --host driver --subhost gpu --account dev --maxjob 0 --retries 5 \
+        --ffbuilder --ffhost cpu
 
 # Cluster 3, active
 $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/oprd1-i_poses.mae \
         -r restraints/pca-kmeans_n04_s42_k05_cluster03_rmsf_avg.cms \
         -j oprd1_n04_s42_k05_cluster03-i \
         --scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-        --align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+        --asl "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
         --md-sim-time 2000 --fep-sim-time 10000 \
-        --host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
-        --ffbuilder --ffhost bolt_cpu
+        --host driver --subhost gpu --account dev --maxjob 0 --retries 5 \
+        --ffbuilder --ffhost cpu
 
 # Cluster 4, active
 $SCHRODINGER/run $REPO/setup_restrained_abfep.py poses/oprd1-a_poses.mae \
         -r restraints/pca-kmeans_n04_s42_k05_cluster04_rmsf_avg.cms \
         -j oprd1_n04_s42_k05_cluster04-a \
         --scaling-factor $SCALING --md-force-const 0.1 --fep-force-const 1.0 \
-        --align-sel "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
+        --asl "protein and chain ${RESCHAIN} and at.ptype CA and ${RESRANGE}" \
         --md-sim-time 2000 --fep-sim-time 10000 \
-        --host bolt_cpu --subhost bolt_gpu --project dev_GPU --maxjob 0 --retries 5 \
-        --ffbuilder --ffhost bolt_cpu
+        --host driver --subhost gpu --account dev --maxjob 0 --retries 5 \
+        --ffbuilder --ffhost cpu
 
 
